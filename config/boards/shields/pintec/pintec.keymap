@@ -14,15 +14,36 @@
 //        | Z  | X  | C  | V  | B  | N  | M  |                       | P2 | P3 |
 //       |              SPACE               |                          | P1 |
                 bindings = <
-    &kp SPACE  &kp C    &kp N               &kp N1          &kp N3
-    &kp A      &kp D    &kp G    &kp J      &kp L           &kp N5
-    &kp F1     &kp F2   &kp F4   &kp F5     &kp F7          &kp F8
-    &kp Q      &kp T    &kp F3   &kp P      &kp F6          &kp N9
-    &kp W      &kp R    &kp Y    &kp O      &kp BACKSPACE   &kp N8
-    &kp E      &kp U    &kp I    &kp SLASH  &kp N7          &kp N0
-    &kp S      &kp F    &kp H    &kp K      &kp N4          &kp N6
-    &kp Z      &kp X    &kp V    &kp B      &kp M           &kp N2
+    &kp N2    &kp M         &kp B     &kp V    &kp X   &kp Z
+    &kp N6    &kp N4        &kp K     &kp H    &kp F   &kp S
+    &kp N0    &kp N7        &kp SLASH &kp I    &kp U   &kp E
+    &kp N8    &kp BACKSPACE &kp O     &kp Y    &kp R   &kp W
+    &kp N9    &kp F6        &kp P     &kp F3   &kp T   &kp Q
+    &kp F8    &kp F7        &kp F5    &kp F4   &kp F2  &kp F1
+    &kp N5    &kp L         &kp J     &kp G    &kp D   &kp A
+    &kp F3    &kp N1                  &kp N    &kp C   &kp SPACE
             >;
         };
+            / {
+            combos {
+                compatible = "zmk,combos";
+                combo_esc {
+                    timeout-ms = <50>;
+                    key-positions = <SPACE Z>;
+                    bindings = <&m0 1>;
+                };
+            };
+        };
+            bt_layer {
+                bindings = < 
+                    &none &none &none &none &none &bootloader
+                    &none &none &none &none &none &BT_CLR
+                    &none &none &none &none &none &BT_SEL 0
+                    &none &none &none &none &none &BT_SEL 1
+                    &none &none &none &none &none &BT_SEL 2
+                    &none &none &none &none &none &none
+                    &none &none &none &none &none &none
+                    &none &none &none &none &none &none
+        };    
     };
 };
