@@ -20,7 +20,7 @@
     &kp N8 &kp BACKSPACE &kp O     &kp Y  &kp R  &kp W
     &kp N9 &kp F6        &kp P     &kp F3 &kp T  &kp Q
     &kp F8 &kp F7        &kp F5    &kp F4 &kp F2 &kp F1
-    &kp N5 &kp L         &kp J     &kp G  &kp D  &kp A
+    &kp N5 &kp L         &kp J     &kp G  &kp D  &bt BT_CLR_ALL
     &kp N3 &kp N1        &kp SPACE &kp N  &kp C  &kp SPACE
             >;
         };
