@@ -1,6 +1,6 @@
-if SHIELD_PINTEC
+if SHIELD_PINTECODD
 
 config ZMK_KEYBOARD_NAME
-    default "Pintec Odd"
+    default "PintecOdd"
 
 endif

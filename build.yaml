@@ -20,5 +20,5 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: pintec
+    shield: PintecOdd
     snippet: zmk-usb-logging
