@@ -23,26 +23,6 @@
     &kp N5    &kp L         &kp J     &kp G    &kp D   &kp A
     &kp F3    &kp N1                  &kp N    &kp C   &kp SPACE
             >;
-        };
-            combos {
-                compatible = "zmk,combos";
-                combo_esc {
-                    timeout-ms = <50>;
-                    key-positions = <SPACE Z>;
-                    bindings = <&mo 1>;
-                };
-            };
-            bt_layer {
-                bindings = < 
-                    &none &none &none &none &none &bootloader
-                    &none &none &none &none &none &none
-                    &none &none &none &none &none &none
-                    &none &none &none &none &none &none
-                    &none &none &none &none &none &none
-                    &none &none &none &none &none &none
-                    &none &none &none &none &none &none
-                    &none &none &none &none &none &none
-                    >;
-        };    
+        };  
     };
 };
