@@ -21,4 +21,7 @@
 include:
   - board: nice_nano_v2
     shield: PintecOdd
-    snippet: zmk-usb-logging
+  - board: nice_nano_v2
+    shield: PintecOdd
+  - board: nice_nano_v2
+    shield: settings_reset
