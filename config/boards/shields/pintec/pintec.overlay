@@ -26,7 +26,12 @@
                     <&pro_micro 14 GPIO_ACTIVE_HIGH>,
                     <&pro_micro 16 GPIO_ACTIVE_HIGH>,
                     <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+    };
 
+    default_kscan: kscan{
+        compatible = "zmk, kscan-gpio direct";
+        label = "default_kscan";
+        
         input-gpios =
             <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
