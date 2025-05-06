@@ -14,14 +14,34 @@
 //        | Z  | X  | C  | V  | B  | N  | M  |                       | P2 | P3 |
 //       |              SPACE               |                          | P1 |
                 bindings = <
-    &kp N2    &kp M         &kp B     &kp V    &kp X   &kp Z
-    &kp N6    &kp N4        &kp K     &kp H    &kp F   &kp S
-    &kp N0    &kp N7        &kp SLASH &kp I    &kp U   &kp E
-    &kp N8    &kp BACKSPACE &kp O     &kp Y    &kp R   &kp W
-    &kp N9    &kp F6        &kp P     &kp F3   &kp T   &kp Q
-    &kp F8    &kp F7        &kp F5    &kp F4   &kp F2  &kp F1
-    &kp N5    &kp L         &kp J     &kp G    &kp D   &kp A
-    &kp N3     &kp N1        &kp SPACE &kp N    &kp C   &kp SPACE
+    &kp N2 &kp M         &kp B     &kp V  &kp X  &kp Z
+    &kp N6 &kp N4        &kp K     &kp H  &kp F  &kp S
+    &kp N0 &kp N7        &kp SLASH &kp I  &kp U  &kp E
+    &kp N8 &kp BACKSPACE &kp O     &kp Y  &kp R  &kp W
+    &kp N9 &kp F6        &kp P     &kp F3 &kp T  &kp Q
+    &kp F8 &kp F7        &kp F5    &kp F4 &kp F2 &kp F1
+    &kp N5 &kp L         &kp J     &kp G  &kp D  &kp A
+    &kp N3 &kp N1        &kp SPACE &kp N  &kp C  &kp SPACE
+            >;
+        };
+        combos {
+            compatible = "zmk,combos";
+            combo_esc {
+            timeout-ms = <50>;
+                key-positions = <A D>;
+                bindings = <&m0 1>;
+        };
+    };
+        lower_layer {
+            bindings = <
+    &bt BT_SEL 2 &trans       &trans &trans &trans &trans
+    &trans       &trans       &trans &trans &trans &trans
+    &bt BT_SEL 0 &trans       &trans &trans &trans &trans
+    &trans       &bt BT_CLR   &trans &trans &trans &trans
+    &trans       &trans       &trans &trans &trans &trans
+    &trans       &trans       &trans &trans &trans &trans
+    &trans       &trans       &trans &trans &trans &trans
+    &trans       &bt BT_SEL 1 &trans &trans &trans &trans
             >;
         };  
     };
