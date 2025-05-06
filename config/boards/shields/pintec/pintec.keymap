@@ -24,7 +24,6 @@
     &kp F3    &kp N1                  &kp N    &kp C   &kp SPACE
             >;
         };
-            / {
             combos {
                 compatible = "zmk,combos";
                 combo_esc {
@@ -33,7 +32,6 @@
                     bindings = <&m0 1>;
                 };
             };
-        };
             bt_layer {
                 bindings = < 
                     &none &none &none &none &none &bootloader
