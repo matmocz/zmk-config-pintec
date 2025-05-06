@@ -24,14 +24,6 @@
     &kp N3 &kp N1        &kp SPACE &kp N  &kp C  &kp SPACE
             >;
         };
-        combos {
-            compatible = "zmk,combos";
-            combo_esc {
-            timeout-ms = <50>;
-                key-positions = <A D>;
-                bindings = <&mo 1>;
-        };
-    };
         lower_layer {
             bindings = <
     &bt BT_SEL 2 &trans       &trans &trans &trans &trans
